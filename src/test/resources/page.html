@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            background: #F4F1F8;
+        }
+        table {
+            width: 600px;
+            border-collapse: collapse;
+            line-height: 1;
+            background:  radial-gradient(farthest-corner at 50% 50%, white, #DCECF8);
+            color: #0C213B;
+            margin: 0 auto;
+        }
+        caption {
+            font-family: cursive;
+            font-weight: bold;
+            font-size: 2em;
+            padding: 5px;
+            color: #0C213B;
+            text-shadow: 1px 1px 0 rgba(0,0,0,.3);
+        }
+        caption:before {
+            content: "\2039";
+            color: #0C213B;
+            margin: 0 10px;
+        }
+        caption:after {
+            content: "\203A";
+            color: #0C213B;
+            margin: 0 10px;
+        }
+        th {
+            padding: 5px;
+            border: 1px solid #457ABA;
+        }
+        td {
+            font-size: 0.8em;
+            padding: 5px 7px;
+            border: 1px solid #457ABA;
+            text-align: center;
+        }
+        form {
+            font-size: 1em;
+            padding: 5px 7px;
+            text-align: center;
+        }
+        p {
+            font-size: 1em;
+            padding: 7px 7px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+<table>
+    <caption>List of users </caption>
+    <tr>
+        <th>№</th>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Email</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Smith</td>
+        <td>John</td>
+        <td>jsmith@gmail.com</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Bach</td>
+        <td>Frank</td>
+        <td>fbach@yahoo.com</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Doe</td>
+        <td>Jason</td>
+        <td>jdoe@hotmail.com</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Conway</td>
+        <td>Tim</td>
+        <td>tconway@earthlink.net</td>
+    </tr>
+</table>
+<form>
+    <p><b>Write Your massage:</b></p>
+    <p><textarea name="comment"></textarea></p>
+    <p><input value="Send" type="submit"></p>
+</form>
+<p>type="checkbox"></p>
+<p>
+    <select>
+        <option data-qa="o1">First Option</option>
+        <option data-qa="o1">Second Option</option>
+    </select>
+</p>
+<p><input type="checkbox"></p>
+<p>
+    <button data-qa="submit_button">Button</button>
+</p>
+<p><img src="https://static.tildacdn.com/tild6431-3066-4264-b661-306535386264/logo.svg" width="500">
+</p>
+<p data-qa="p1"><b>Some Text 3</b></p>
+<p><a href="https://www.tut.by/">tut.by</a></p>
+</body>
+</html>
