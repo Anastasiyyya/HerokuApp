@@ -33,8 +33,8 @@ public class SortableDataTablesTest {
         driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
         driver.get("http://the-internet.herokuapp.com/tables");
         WebElement getInformation = driver.findElement(By.xpath("//*[@id='table2']//tr[3]//td[4]"));
-        String due = getInformation.getText();
-        Assert.assertEquals(due,"$100.00");
+        String dueText = getInformation.getText();
+        Assert.assertEquals(dueText,"$100.00");
         driver.quit();
     }
     @Test

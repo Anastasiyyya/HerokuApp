@@ -46,7 +46,6 @@ public class CheckBoxesTest {
         WebElement secondCheckbox = driver.findElement(By.xpath("//*[@id='checkboxes']/*[@type='checkbox'][2]"));
         Assert.assertTrue(secondCheckbox.isSelected(), "Test passed.Second checkbox is checked");
         driver.quit();
-        driver.quit();
     }
 
     @Test
@@ -59,7 +58,6 @@ public class CheckBoxesTest {
         WebElement secondCheckbox = driver.findElement(By.xpath("//*[@id='checkboxes']/*[@type='checkbox'][2]"));
         secondCheckbox.click();
         Assert.assertFalse(secondCheckbox.isSelected(), "Test passed.Second checkbox is unchecked");
-        driver.quit();
         driver.quit();
     }
 }

@@ -24,10 +24,10 @@ public class HoverTests {
         Actions actions = new Actions(driver);
         WebElement userPhoto = driver.findElement(By.xpath("//*[@id='content']//div[1]/img"));
         actions.moveToElement(userPhoto).build().perform();
-        WebElement getInformation = driver.findElement(By.xpath("//*[@id='content']/div/div[1]/div/h5"));
-        String userName = getInformation.getText();
+        WebElement userInfoElement = driver.findElement(By.xpath("//*[@href='/users/1']/../h5"));
+        String userName = userInfoElement.getText();
         Assert.assertEquals(userName, "name: user1");
-        driver.findElement(By.xpath("//*[@id='content']//div[1]/div/a")).click();
+        driver.findElement(By.xpath("//*[@href='/users/1']")).click();
         Assert.assertFalse(driver.getTitle().contains("404"));
         driver.quit();
     }
@@ -41,10 +41,10 @@ public class HoverTests {
         Actions actions = new Actions(driver);
         WebElement userPhoto = driver.findElement(By.xpath("//*[@id='content']//div[2]/img"));
         actions.moveToElement(userPhoto).build().perform();
-        WebElement getInformation = driver.findElement(By.xpath("//*[@id='content']/div/div[2]/div/h5"));
-        String userName = getInformation.getText();
+        WebElement userInfoElement = driver.findElement(By.xpath("//*[@href='/users/2']/../h5"));
+        String userName = userInfoElement.getText();
         Assert.assertEquals(userName, "name: user2");
-        driver.findElement(By.xpath("//*[@id='content']//div[2]/div/a")).click();
+        driver.findElement(By.xpath("//*[@href='/users/2']")).click();
         Assert.assertFalse(driver.getTitle().contains("404"));
         driver.quit();
     }
@@ -58,10 +58,10 @@ public class HoverTests {
         Actions actions = new Actions(driver);
         WebElement userPhoto = driver.findElement(By.xpath("//*[@id='content']//div[3]/img"));
         actions.moveToElement(userPhoto).build().perform();
-        WebElement getInformation = driver.findElement(By.xpath("//*[@id='content']/div/div[3]/div/h5"));
-        String userName = getInformation.getText();
+        WebElement userInfoElement = driver.findElement(By.xpath("//*[@href='/users/3']/../h5"));
+        String userName = userInfoElement.getText();
         Assert.assertEquals(userName, "name: user3");
-        driver.findElement(By.xpath("//*[@id='content']//div[3]/div/a")).click();
+        driver.findElement(By.xpath("//*[@href='/users/3']")).click();
         Assert.assertFalse(driver.getTitle().contains("404"));
         driver.quit();
     }

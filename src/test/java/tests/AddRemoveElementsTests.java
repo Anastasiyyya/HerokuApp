@@ -34,7 +34,7 @@ public class AddRemoveElementsTests {
         deleteButton.click();
         countOfElements = driver.findElements(By.xpath("//*[@onclick='deleteElement()']"));
         numberOfElements = countOfElements.size();
-        System.out.println("The number of buttons \"Delete\"" +  numberOfElements);
+        System.out.println("The number of buttons 'Delete'" +  numberOfElements);
         driver.quit();
     }
 }
