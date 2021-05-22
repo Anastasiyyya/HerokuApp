@@ -44,8 +44,8 @@ public class DynamicControlsPage extends BasePage {
      * Wait until a message that the checkbox has been deleted appears
      * @param message
      */
-    public void waitMessage(String message) {
-        waitTextDisplayed(MESSAGE, 20, message);
+    public void waitForMessage(String message) {
+        waitForTextDisplayed(MESSAGE, 20, message);
     }
 
     public boolean isInputFieldEnabled() {

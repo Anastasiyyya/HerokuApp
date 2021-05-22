@@ -17,7 +17,7 @@ public class BaseTest implements IConstants {
     DynamicControlsPage dynamicControlsPage;
     FileDownloadPage fileDownloadPage;
     FileUploadPage fileUploadPage;
-    FramesPage iframe;
+    FramesPage iframePage;
 
     @BeforeMethod
     public void initTest(){
@@ -33,7 +33,7 @@ public class BaseTest implements IConstants {
         dynamicControlsPage = new DynamicControlsPage(driver);
         fileDownloadPage = new FileDownloadPage(driver);
         fileUploadPage = new FileUploadPage(driver);
-        iframe = new FramesPage(driver);
+        iframePage = new FramesPage(driver);
     }
 
     @AfterMethod

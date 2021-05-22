@@ -15,11 +15,11 @@ public class DynamicControlsTest extends BaseTest {
         dynamicControlsPage.clickCheckbox();
         Assert.assertTrue(dynamicControlsPage.isCheckboxSelected());
         dynamicControlsPage.clickRemoveButton();
-        dynamicControlsPage.waitMessage(CHECKBOX_REMOVED_MESSAGE);
+        dynamicControlsPage.waitForMessage(CHECKBOX_REMOVED_MESSAGE);
         Assert.assertFalse(dynamicControlsPage.isCheckboxDisplayed());
         Assert.assertFalse(dynamicControlsPage.isInputFieldEnabled());
         dynamicControlsPage.clickEnableButton();
-        dynamicControlsPage.waitMessage(INPUT_FIELD_ENABLED_MESSAGE);
+        dynamicControlsPage.waitForMessage(INPUT_FIELD_ENABLED_MESSAGE);
         Assert.assertTrue(dynamicControlsPage.isInputFieldEnabled());
     }
 }

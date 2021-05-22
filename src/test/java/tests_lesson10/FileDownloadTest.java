@@ -9,7 +9,7 @@ public class FileDownloadTest extends BaseTest implements IConstants {
     public static final String SELECTED_FILE_NAME = "some-file.txt";
 
     @Test
-    public void FileDownloadTest() throws InterruptedException {
+    public void fileDownloadTest() throws InterruptedException {
         fileDownloadPage.openPage(FILE_DOWNLOAD_PAGE_URL);
         fileDownloadPage.waitForPageLoaded();
         fileDownloadPage.clickDownloadFileLink(SELECTED_FILE_NAME);

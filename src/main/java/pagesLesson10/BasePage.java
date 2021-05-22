@@ -46,7 +46,7 @@ abstract class BasePage {
      * @param timeout
      * @param string
      */
-    public void waitTextDisplayed(By element, int timeout, String string) {
+    public void waitForTextDisplayed(By element, int timeout, String string) {
         wait = new WebDriverWait(driver, timeout);
         wait.until(ExpectedConditions.textToBe(element, string));
     }

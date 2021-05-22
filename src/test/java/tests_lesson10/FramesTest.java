@@ -10,8 +10,8 @@ public class FramesTest extends BaseTest implements IConstants {
 
     @Test
     public void checkTextInFrameTest() {
-        iframe.openPage(FRAMES_PAGE_URL);
-        iframe.waitForPageLoading();
-        Assert.assertEquals(iframe.getTextFromIFrameEditor(), EXPECTED_TEXT_IN_FRAME);
+        iframePage.openPage(FRAMES_PAGE_URL);
+        iframePage.waitForPageLoading();
+        Assert.assertEquals(iframePage.getTextFromIFrameEditor(), EXPECTED_TEXT_IN_FRAME);
     }
 }
